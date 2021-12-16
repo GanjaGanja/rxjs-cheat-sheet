@@ -55,7 +55,7 @@ Emits only the first value emitted by the source Observable that meets some cond
 ## Utility Operators
 
 ### tap
-Used to perform side-effects for notifications from the source observable.
+Used to perform side-effects for notifications from the source observable. Mostly used for debugging.
 
 
 
