@@ -1,27 +1,28 @@
-## RxJS Cheat Sheet
+# RxJS 7 Cheat Sheet
 
 List of the most used RxJS operators (at least from my experience) and description.
 
-### Operator
+## Join Operators
+### combineLatestWith
+### concatWith
+### mergeWith
 
-```
-Example
-```
+## Transformation Operators
+### map
+### mergeMap
+### switchMap
 
-Description.
+## Filtering Operators
+### debounce
+### filter
+### take
 
-### Operator
+## Conditional Operators
+### find
 
-```
-Example
-```
+## Utility Operators
+### tap
 
-Description.
-
-### Operator
-
-```
-Example
-```
-
-Description.
+## Error Handling Operators
+### catchError
+### retry
