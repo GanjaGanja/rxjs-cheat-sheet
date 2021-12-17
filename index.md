@@ -2,7 +2,7 @@
 
 List of the most used RxJS operators (at least from my experience) and description.
 
-
+<br />
 
 ## Join Operators
 
@@ -19,7 +19,7 @@ This operator will sequentially emit the Observable given as input and proceed t
 ### mergeWith
 Merge the values from all observables to an single observable result.
 
-
+<br />
 
 ## Transformation Operators
 
@@ -32,7 +32,7 @@ Projects each source value to an Observable which is merged in the output Observ
 ### switchMap
 Projects each source value to an Observable which is merged in the output Observable, emitting values only from the most recently projected Observable.
 
-
+<br />
 
 ## Filtering Operators
 
@@ -45,21 +45,21 @@ Filter items emitted by the source Observable by only emitting those that satisf
 ### take
 Emits only the first ```count``` values emitted by the source Observable.
 
-
+<br />
 
 ## Conditional Operators
 
 ### find
 Emits only the first value emitted by the source Observable that meets some condition.
 
-
+<br />
 
 ## Utility Operators
 
 ### tap
 Used to perform side-effects for notifications from the source observable. Mostly used for debugging.
 
-
+<br />
 
 ## Error Handling Operators
 
