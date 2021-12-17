@@ -10,7 +10,8 @@ List of the most used RxJS operators (at least from my experience) and descripti
 Create an observable that combines the latest values from all passed observables and the source into arrays and emits them.
 
 ### concatWith
-![Image of 'concatWith' operator](/assets/img/concat "Image of 'concatWith' operator")
+![Image of 'concatWith' operator](/rxjs-cheat-sheet/assets/img/concat.png "Image of 'concatWith' operator")
+
 Emits all of the values from the source observable, then, once it completes, subscribes to each observable source provided, one at a time, emitting all of their values, and not subscribing to the next one until it completes.
 
 This operator will sequentially emit the Observable given as input and proceed to the next one.
