@@ -1,6 +1,6 @@
 # RxJS 7 Cheat Sheet
 
-List of the most used RxJS operators and Observable creators (at least from my experience) and description. Images were taken from [rxjs-visualize](https://rxjs-visualize.explosionpills.com/).
+List of the most used RxJS operators and Observable creators (at least from my experience) and description. Images were taken from <a href="https://rxjs-visualize.explosionpills.com/" target="_blank">rxjs-visualize</a>.
 
 <br />
 <br />
@@ -28,6 +28,8 @@ Requires an initial value and emits the current value to new subscribers.
 ### Subject
 
 A special type of Observable which shares a single execution path among observers.
+
+Every Subject is an Observable and an Observer.
 
 <br />
 <br />
