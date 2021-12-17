@@ -5,6 +5,33 @@ List of the most used RxJS operators and Observable creators (at least from my e
 <br />
 <br />
 
+## Subjects
+
+### AsyncSubject
+
+Emits its last value on completion.
+
+<br />
+
+### BehaviorSubject
+
+Requires an initial value and emits the current value to new subscribers.
+
+<br />
+
+### ReplaySubject
+
+"Replays" or emits old values to new subscribers.
+
+<br />
+
+### Subject
+
+A special type of Observable which shares a single execution path among observers.
+
+<br />
+<br />
+
 ## Observable Creators
 
 ### forkJoin
