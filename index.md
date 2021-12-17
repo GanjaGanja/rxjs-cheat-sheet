@@ -3,6 +3,7 @@
 List of the most used RxJS operators and Observable creators (at least from my experience) and description. Images were taken from [rxjs-visualize](https://rxjs-visualize.explosionpills.com/).
 
 <br />
+<br />
 
 ## Observable Creators
 
@@ -13,6 +14,8 @@ Accepts an Array of ObservableInput or a dictionary Object of ObservableInput an
 
 ```forkJoin``` does not emit until all source Observables complete. Once that happens, it emits once: an array of the last values that were emitted by the source Observables.
 
+<br />
+
 ### combineLatestWith (formerly combineLatest)
 ![Image of 'combineLatestWith' operator](/rxjs-cheat-sheet/assets/img/combineLatest.png "Image of 'combineLatestWith' operator")
 
@@ -22,6 +25,8 @@ This operator is best used when you have multiple, long-lived observables that r
 
 ```combineLatestWith``` will not emit an initial value until each observable emits at least one value.
 
+<br />
+
 ### concatWith (formerly concat)
 ![Image of 'concatWith' operator](/rxjs-cheat-sheet/assets/img/concat.png "Image of 'concatWith' operator")
 
@@ -29,10 +34,14 @@ Emits all of the values from the source observable, then, once it completes, sub
 
 This operator will sequentially emit the Observable given as input and proceed to the next one.
 
+<br />
+
 ### mergeWith (formerly merge)
 ![Image of 'mergeWith' operator](/rxjs-cheat-sheet/assets/img/merge.png "Image of 'mergeWith' operator")
 
 Merge the values from all observables to an single observable result.
+
+<br />
 
 ### zipWith (formerly zip)
 ![Image of 'zipWith' operator](/rxjs-cheat-sheet/assets/img/zip.png "Image of 'zipWith' operator")
@@ -42,6 +51,7 @@ Subscribes to the source, and the observable inputs provided as arguments, and c
 ```zip``` will only emit when all of its sources have emitted since the last time zip emitted.
 
 <br />
+<br />
 
 ## Transformation Operators
 
@@ -50,10 +60,14 @@ Subscribes to the source, and the observable inputs provided as arguments, and c
 
 Applies a given project function to each value emitted by the source Observable, and emits the resulting values as an Observable.
 
+<br />
+
 ### mergeMap (formerly flatMap)
 ![Image of 'mergeMap' operator](/rxjs-cheat-sheet/assets/img/mergeMap.png "Image of 'mergeMap' operator")
 
 Projects each source value to an Observable which is merged in the output Observable.
+
+<br />
 
 ### switchMap
 ![Image of 'switchMap' operator](/rxjs-cheat-sheet/assets/img/switchMap.png "Image of 'switchMap' operator")
@@ -61,18 +75,24 @@ Projects each source value to an Observable which is merged in the output Observ
 Projects each source value to an Observable which is merged in the output Observable, emitting values only from the most recently projected Observable.
 
 <br />
+<br />
 
 ## Filtering Operators
 
 ### debounce
 Emits a notification from the source Observable only after a particular time span determined by another Observable has passed without another source emission.
 
+<br />
+
 ### filter
 Filter items emitted by the source Observable by only emitting those that satisfy a specified predicate.
+
+<br />
 
 ### take
 Emits only the first ```count``` values emitted by the source Observable.
 
+<br />
 <br />
 
 ## Conditional Operators
@@ -81,6 +101,7 @@ Emits only the first ```count``` values emitted by the source Observable.
 Emits only the first value emitted by the source Observable that meets some condition.
 
 <br />
+<br />
 
 ## Utility Operators
 
@@ -88,11 +109,14 @@ Emits only the first value emitted by the source Observable that meets some cond
 Used to perform side-effects for notifications from the source observable. Mostly used for debugging.
 
 <br />
+<br />
 
 ## Error Handling Operators
 
 ### catchError
 Catches errors on the observable to be handled by returning a new observable or throwing an error.
+
+<br />
 
 ### retry
 This operator will take care of retrying back on the source Observable if there is error and the retry will be done based on the input count given.
