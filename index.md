@@ -23,6 +23,8 @@ Requires an initial value and emits the current value to new subscribers.
 
 "Replays" or emits old values to new subscribers.
 
+```ReplaySubject``` has an internal buffer that will store a specified number of values that it has observed.
+
 <br />
 
 ### Subject
@@ -84,6 +86,13 @@ Subscribes to the source, and the observable inputs provided as arguments, and c
 
 ## Transformation Operators
 
+### concatMap
+![Image of 'concatMap' operator](/rxjs-cheat-sheet/assets/img/concatMap.png "Image of 'concatMap' operator")
+
+Projects each source value to an Observable which is merged in the output Observable, in a serialized fashion waiting for each one to complete before merging the next.
+
+<br />
+
 ### map
 ![Image of 'map' operator](/rxjs-cheat-sheet/assets/img/map.png "Image of 'map' operator")
 
@@ -95,6 +104,8 @@ Applies a given project function to each value emitted by the source Observable,
 ![Image of 'mergeMap' operator](/rxjs-cheat-sheet/assets/img/mergeMap.png "Image of 'mergeMap' operator")
 
 Projects each source value to an Observable which is merged in the output Observable.
+
+```mergeMap``` allows for multiple inner subscriptions to be active at a time.
 
 <br />
 
