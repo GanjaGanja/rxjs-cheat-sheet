@@ -7,6 +7,8 @@ List of the most used RxJS operators (at least from my experience) and descripti
 ## Join Operators
 
 ### combineLatestWith
+![Image of 'combineLatestWith' operator](/rxjs-cheat-sheet/assets/img/combineLatest.png "Image of 'combineLatestWith' operator")
+
 Create an observable that combines the latest values from all passed observables and the source into arrays and emits them.
 
 ### concatWith
@@ -17,6 +19,8 @@ Emits all of the values from the source observable, then, once it completes, sub
 This operator will sequentially emit the Observable given as input and proceed to the next one.
 
 ### mergeWith
+![Image of 'mergeWith' operator](/rxjs-cheat-sheet/assets/img/merge.png "Image of 'mergeWith' operator")
+
 Merge the values from all observables to an single observable result.
 
 <br />
